@@ -1,0 +1,68 @@
+/* Narrowboat - WaterWay Roads (coming soon) */
+
+template template_wway_narrowboat(x, y) {
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x,		y,		5,		22,		-2,			-11]
+    [ x+6,		y,		20,		16,		-10,		-9]
+    [ x+27,		y,		32,		8,		-16,		-4]
+    [ x+60,		y,		20,		16,		-10,		-8]
+    [ x+81,		y,		5,		22,		-2,			-11]
+    [ x+87,		y,		20,		16,		-10,		-8]
+    [ x+108,	y,		32,		8,		-16,		-7]
+    [ x+141,	y,		20,		16,		-10,		-8]
+}
+
+/* Narrowboat - Ship */
+
+template template_ship_narrowboat(x, y) {
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x+20,		y+10,		28,		89,		-14,		-40]
+    [ x+60,		y+10,		113,	66,		-78,		-21]
+    [ x+186,	y+10,		138,	48,		-68,		-21]
+    [ x+328,	y+10,		113,	66,		-30,		-21]
+    [ x+454,	y+10,		28,		89,		-14,		-40]
+    [ x+494,	y+10,		113,	66,		-78,		-24]
+    [ x+620,	y+10,		138,	48,		-68,		-21]
+    [ x+762,	y+10,		113,	66,		-32,		-21]
+}
+
+spriteset(spriteset_narrowboat_tarp_loaded, "src\gfx\narrowboat_ship.png") {
+    template_ship_narrowboat(0,0)
+}
+
+spriteset(spriteset_narrowboat_tarp_loading, "src\gfx\narrowboat_ship.png") {
+    template_ship_narrowboat(0,100)
+}
+
+spritegroup spritegroup_narrowboat_tarp {
+	loaded:		[spriteset_narrowboat_tarp_loaded];
+	loading:	[spriteset_narrowboat_tarp_loading];
+}
+
+item(FEAT_SHIPS, narrowboat) {
+	property {
+		/* Common properties */
+		name: string(STR_NAME_NARROWBOAT);
+		climates_available: 		ALL_CLIMATES;
+		introduction_date:			date(1700,01,01);
+		model_life:					VEHICLE_NEVER_EXPIRES;
+		vehicle_life:				15;
+		reliability_decay:			5;
+		refittable_cargo_classes:	bitmask(CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_HAZARDOUS, CC_COVERED, CC_NON_POURABLE, CC_NEO_BULK);
+		loading_speed:				10;
+		cost_factor:				10;
+		running_cost_factor:		5;
+		
+		/* Ship-specific porperties */
+		sprite_id:					SPRITE_ID_NEW_ROADVEH; //enable new graphics
+		speed:						6 mph;
+		misc_flags:					bitmask(ROADVEH_FLAG_2CC);
+        refit_cost:					0;
+		is_refittable:				1;
+		default_cargo_type:			COAL;
+		cargo_capacity:				27;
+	}
+	graphics {
+		default: spritegroup_narrowboat_tarp;
+	}
+}
