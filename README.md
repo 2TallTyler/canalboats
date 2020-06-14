@@ -1,5 +1,7 @@
 # Sal's Canalboats
 
+![Canalboats on a river near farm fields](/docs/0-1-0_screenshot.png)
+
 ♫ I've got a mule and her name is Sal / 15 miles on the Erie Canal ♫
 
 Before railroads, canals powered the early industrial revolution. Towed by horses, mules, or sometimes people, canalboats could carry up to 30 tons of cargo.
