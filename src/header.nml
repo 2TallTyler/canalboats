@@ -9,3 +9,13 @@ grf {
 cargotable {
 	COAL
 }
+
+basecost { // Building, clearing, and maintaining canals costs 1/16 normal
+	PR_BUILD_CANAL: 		-4;
+	PR_CLEAR_CANAL:			-4;
+	PR_BUILD_AQUEDUCT:		-4;
+	PR_CLEAR_AQUEDUCT:		-4;
+	PR_BUILD_LOCK:			-4;
+	PR_CLEAR_LOCK:			-4;
+	PR_MAINTENANCE_CANAL:	-4;
+}

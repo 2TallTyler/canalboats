@@ -9,6 +9,16 @@ grf {
 cargotable {
 	COAL
 }
+
+basecost { // Building, clearing, and maintaining canals costs 1/16 normal
+	PR_BUILD_CANAL: 		-4;
+	PR_CLEAR_CANAL:			-4;
+	PR_BUILD_AQUEDUCT:		-4;
+	PR_CLEAR_AQUEDUCT:		-4;
+	PR_BUILD_LOCK:			-4;
+	PR_CLEAR_LOCK:			-4;
+	PR_MAINTENANCE_CANAL:	-4;
+}
 /* Narrowboat - WaterWay Roads (coming soon) */
 
 template template_wway_narrowboat(x, y) {
@@ -59,9 +69,9 @@ item(FEAT_SHIPS, narrowboat) {
 		model_life:					VEHICLE_NEVER_EXPIRES;
 		vehicle_life:				15;
 		reliability_decay:			5;
-		refittable_cargo_classes:	bitmask(CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_HAZARDOUS, CC_COVERED, CC_NON_POURABLE, CC_NEO_BULK);
+		refittable_cargo_classes:	bitmask(CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_OVERSIZED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);
 		loading_speed:				10;
-		cost_factor:				10;
+		cost_factor:				5;
 		running_cost_factor:		5;
 		
 		/* Ship-specific porperties */

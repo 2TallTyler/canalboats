@@ -7,3 +7,5 @@
 Before railroads, canals powered the early industrial revolution. Towed by horses, mules, or sometimes people, canalboats could carry up to 30 tons of cargo.
 
 This work-in-progress canalboat set starts in 1700 and will include canalboats for both OpenTTD canals and Kruemelchen's WWAY roads.
+
+In order to make early networks viable, the cost of building, clearing, and maintaining canals is reduced to 1/4 of default.
