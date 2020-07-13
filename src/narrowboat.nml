@@ -26,11 +26,11 @@ template template_ship_narrowboat(x, y) {
     [ x+762,	y+10,		113,	66,		-32,		-21]
 }
 
-spriteset(spriteset_narrowboat_tarp_loaded, "src\gfx\narrowboat_ship.png") {
+spriteset(spriteset_narrowboat_tarp_loaded, "src\gfx\narrowboat_ship_v2.png") {
     template_ship_narrowboat(0,0)
 }
 
-spriteset(spriteset_narrowboat_tarp_loading, "src\gfx\narrowboat_ship.png") {
+spriteset(spriteset_narrowboat_tarp_loading, "src\gfx\narrowboat_ship_v2.png") {
     template_ship_narrowboat(0,100)
 }
 
