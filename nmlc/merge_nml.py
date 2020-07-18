@@ -16,6 +16,10 @@ narrowboat = codecs.open("src/narrowboat.nml",'r','utf8')
 sections.append(narrowboat.read())
 narrowboat.close()
 
+narrow_packetboat = codecs.open("src/narrow_packetboat.nml",'r','utf8')
+sections.append(narrow_packetboat.read())
+narrow_packetboat.close()
+
 print("Python: Writing combined NML file")
 
 # create a new file on disk, which will have a name and be writable

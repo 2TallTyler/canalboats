@@ -2,12 +2,12 @@ grf {
 	grfid: "TT\05\01";
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
-	version: 0;
+	version: 1;
 	min_compatible_version: 0;
 }
 
 cargotable {
-	COAL
+	COAL, PASS
 }
 
 basecost { // Building, clearing, and maintaining canals costs 1/16 normal

@@ -1,6 +1,7 @@
 ##grflangid 0x01
 
 STR_GRF_NAME						:{TITLE} {VERSION}
-STR_GRF_DESC						:{YELLOW}"I've got a mule and her name is Sal / 15 years on the Erie Canal"{}{}{ORANGE}A work-in-progress canalboat set beginning in 1700.{}{}{BLACK}Drawn and coded by 2TallTyler.
+STR_GRF_DESC						:{YELLOW}"I've got a mule and her name is Sal / 15 years on the Erie Canal"{}{}{ORANGE}A canalboat set beginning in 1700.{}{}{BLACK}Drawn and coded by 2TallTyler.
 
 STR_NAME_NARROWBOAT					:Narrowboat
+STR_NAME_PACKETBOAT					:Packet boat
