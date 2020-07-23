@@ -1,6 +1,6 @@
 # Sal's Canalboats
 
-![Canalboats on a river near farm fields](/docs/0-1-0_screenshot.png)
+![Packet boats in a canal](/docs/packet_boats.png)
 
 ♫ I've got a mule and her name is Sal / 15 miles on the Erie Canal ♫
 
