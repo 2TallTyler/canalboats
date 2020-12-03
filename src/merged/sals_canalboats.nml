@@ -2,7 +2,7 @@ grf {
 	grfid: "TT\05\01";
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
-	version: 2;
+	version: 3;
 	min_compatible_version: 0;
 }
 
@@ -67,8 +67,8 @@ item(FEAT_SHIPS, narrow_packetboat) {
 		reliability_decay:			5;
 		refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL, CC_EXPRESS, CC_ARMOURED);
 		loading_speed:				10;
-		cost_factor:				6;
-		running_cost_factor:		5;
+		cost_factor:				16;
+		running_cost_factor:		40;
 		
 		/* Ship-specific porperties */
 		sprite_id:					SPRITE_ID_NEW_ROADVEH; //enable new graphics
@@ -135,8 +135,8 @@ item(FEAT_SHIPS, narrowboat) {
 		reliability_decay:			5;
 		refittable_cargo_classes:	bitmask(CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_OVERSIZED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);
 		loading_speed:				10;
-		cost_factor:				5;
-		running_cost_factor:		5;
+		cost_factor:				15;
+		running_cost_factor:		20;
 		
 		/* Ship-specific porperties */
 		sprite_id:					SPRITE_ID_NEW_ROADVEH; //enable new graphics
