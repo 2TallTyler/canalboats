@@ -2,8 +2,8 @@ grf {
 	grfid: "TT\05\01";
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
-	version: 3;
-	min_compatible_version: 0;
+	version: 4;
+	min_compatible_version: 4;
 }
 
 cargotable {
@@ -72,12 +72,12 @@ item(FEAT_SHIPS, narrow_packetboat) {
 		
 		/* Ship-specific porperties */
 		sprite_id:					SPRITE_ID_NEW_ROADVEH; //enable new graphics
-		speed:						18 mph;
+		speed:						11 mph;
 		misc_flags:					bitmask(ROADVEH_FLAG_2CC);
         refit_cost:					0;
 		is_refittable:				1;
 		default_cargo_type:			PASS;
-		cargo_capacity:				30;
+		cargo_capacity:				60;
 	}
 	graphics {
 		default: spritegroup_narrow_packetboat;
@@ -140,12 +140,12 @@ item(FEAT_SHIPS, narrowboat) {
 		
 		/* Ship-specific porperties */
 		sprite_id:					SPRITE_ID_NEW_ROADVEH; //enable new graphics
-		speed:						18 mph;
+		speed:						11 mph;
 		misc_flags:					bitmask(ROADVEH_FLAG_2CC);
         refit_cost:					0;
 		is_refittable:				1;
 		default_cargo_type:			COAL;
-		cargo_capacity:				27;
+		cargo_capacity:				54;
 	}
 	graphics {
 		default: spritegroup_narrowboat_tarp;

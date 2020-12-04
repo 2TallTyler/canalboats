@@ -51,12 +51,12 @@ item(FEAT_SHIPS, narrow_packetboat) {
 		
 		/* Ship-specific porperties */
 		sprite_id:					SPRITE_ID_NEW_ROADVEH; //enable new graphics
-		speed:						18 mph;
+		speed:						11 mph;
 		misc_flags:					bitmask(ROADVEH_FLAG_2CC);
         refit_cost:					0;
 		is_refittable:				1;
 		default_cargo_type:			PASS;
-		cargo_capacity:				30;
+		cargo_capacity:				60;
 	}
 	graphics {
 		default: spritegroup_narrow_packetboat;
