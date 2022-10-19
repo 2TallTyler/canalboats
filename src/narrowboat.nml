@@ -56,7 +56,7 @@ item(FEAT_SHIPS, narrowboat) {
 		/* Ship-specific porperties */
 		sprite_id:					SPRITE_ID_NEW_ROADVEH; //enable new graphics
 		speed:						11 mph;
-		misc_flags:					bitmask(ROADVEH_FLAG_2CC);
+		misc_flags:					bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT);
         refit_cost:					0;
 		is_refittable:				1;
 		default_cargo_type:			COAL;
